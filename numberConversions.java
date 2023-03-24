@@ -63,10 +63,10 @@ class NumberConversions{
         int len = hex.length()-1;
         int pow=0;
         for(int i=len; i>=0; i--){
-            if(hex.charAt(len)>='0' && hex.charAt(len)<='9'){
-                dec=dec+(hex.charAt(len)-48)*(int)Math.pow(16,pow);
+            if(hex.charAt(i)>='0' && hex.charAt(i)<='9'){
+                dec=dec+(hex.charAt(i)-48)*(int)Math.pow(16,pow);
             }else{
-                dec=dec+(hex.charAt(len)-55)*(int)Math.pow(16,pow);
+                dec=dec+(hex.charAt(i)-55)*(int)Math.pow(16,pow);
             }
             pow++;
         }
